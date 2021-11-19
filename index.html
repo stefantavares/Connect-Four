@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ST Connect Four!</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
 </head>
 <body>
     <h1>CONNECT FOUR</h1>
-    <h3 class="player-turn"></h3>
+    <h3 class="player-turn">IT'S YOUR TURN <span id="plyr">RED</span></h3>
 
-<div class="container">
+<div class="board-container">
     <table>
         <tr>
             <td class="box" id="slt0"></td>
@@ -68,17 +68,16 @@
             <td class="box" id="slt40"></td>
             <td class="box" id="slt41"></td>
         </tr>
-        <tr>
-            <td class="box-hidden" id="slo42"></td>
+        <!-- <tr> -->
+            <!-- <td class="box-hidden" id="slt42"></td>
             <td class="box-hidden" id="slt43"></td>
             <td class="box-hidden" id="slt44"></td>
             <td class="box-hidden" id="slt45"></td>
             <td class="box-hidden" id="slt46"></td>
             <td class="box-hidden" id="slt47"></td>
             <td class="box-hidden" id="slt48"></td>
-        </tr>
-       
-        
+        </tr> -->
+        </table>
 </div>
 
 <button class="reset">RESET</button>
