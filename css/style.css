@@ -35,11 +35,11 @@ body {
 }
 
 h1{
-    font-size: 35px;
+    font-size: 37px;
     margin-top: 25px;
 }
 
-h3{
+h2{
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 15px;
@@ -49,39 +49,30 @@ h3{
     color: red;
 }
 
-.reset{
+button.reset {
     position: absolute;
-    top:42rem;
+    top: 43rem;
     left: 50%;
     transform: translate(-50%);
     width: 160px;
     height: 50px;
     margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-items: center;
-    padding: 0.3rem;
-    border: 1px solid black;
+    padding:0.35em 1.2em;
+    border: 2px solid black;
+    margin:0 0.3em 0.3em 0;
     border-radius: 5px;
+    box-sizing: border-box;
+    font-family:'Roboto',sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    background: #ffffff;
-    cursor: pointer;  
-}
-
-@media screen and (max-width: 600px){
-    .container{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        width: 90%;
-        height: 520px;
-        top: 9rem;
-        border: 2px solid black;
-        padding: .5rem;
-    
+    font-size: 17px;
+    color:black;
+    background-color: white;
+    text-align:center;
+    cursor: pointer;
+    transition: all 0.1s;
     }
-    
+
+button.reset:hover {
+    color: white;
+    background-color: black;
 }
