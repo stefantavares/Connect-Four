@@ -10,11 +10,11 @@
 </head>
 <body>
     <h1>CONNECT FOUR</h1>
-    <h2 class="player-turn">IT'S YOUR TURN <span id="plyr-display">RED</span></h2>
+    <h2 class="player-turn">IT'S YOUR TURN &nbsp <img></h2>
 
 <div class="board-container">
     <table>
-        <tr>
+        <tr class="row">
             <td class="box" id="slt0"></td>
             <td class="box" id="slt1"></td>
             <td class="box" id="slt2"></td>
@@ -68,18 +68,17 @@
             <td class="box" id="slt40"></td>
             <td class="box" id="slt41"></td>
         </tr>
-        <!-- <tr> -->
-            <!-- <td class="box-hidden" id="slt42"></td>
-            <td class="box-hidden" id="slt43"></td>
-            <td class="box-hidden" id="slt44"></td>
-            <td class="box-hidden" id="slt45"></td>
-            <td class="box-hidden" id="slt46"></td>
-            <td class="box-hidden" id="slt47"></td>
-            <td class="box-hidden" id="slt48"></td>
-        </tr> -->
+        <tr> 
+            <td class="unavailable" id="slt42"></td>
+            <td class="unavailable" id="slt43"></td>
+            <td class="unavailable" id="slt44"></td>
+            <td class="unavailable" id="slt45"></td>
+            <td class="unavailable" id="slt46"></td>
+            <td class="unavailable" id="slt47"></td>
+            <td class="unavailable" id="slt48"></td>
+        </tr>
         </table>
 </div>
-
 <button class="reset">REPLAY</button>
 </body>
 </html>

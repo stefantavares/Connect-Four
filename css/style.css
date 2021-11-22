@@ -6,8 +6,6 @@
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
     text-align: center;
-    margin-top: 0.5rem;
-   
 }
 
 body {
@@ -18,40 +16,47 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    width: 600px;
-    height: 527px;
+    margin-top: 6px;
+    width: 550px;
+    height: 466px;
     background: black;
     border: 2px solid black;
     border-radius: 10px;
     padding: .5rem;
 }
 
-.board-container table tr td{
-    width: 90px;
-    height: 80px;
+.board-container td.box{
+    cursor: pointer;
+    width: 80px;
+    height: 71px;
     border: 2px solid black;
     border-radius: 50%;
     background-color: white;
 }
 
-h1{
+h1 {
     font-size: 37px;
     margin-top: 25px;
+    margin-bottom: 12px;
 }
 
-h2{
+h2 {
     font-size: 20px;
-    margin-top: 5px;
+    margin-top: 0;
     margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#plyr-display {
-    color: red;
+img {
+    width: 30px;
+    height: auto;
 }
 
 button.reset {
     position: absolute;
-    top: 43rem;
+    top: 39rem;
     left: 50%;
     transform: translate(-50%);
     width: 160px;
