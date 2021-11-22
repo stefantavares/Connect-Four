@@ -9,12 +9,15 @@ const lookup = {
 };
 
 /*----- app's state (variables) -----*/
-
-
+let board;
+let turn;
+let winner;
 
 
 /*----- cached element references -----*/
-
+const imgEl = document.querySelector('img');
+const slotEls = document.querySelectorAll('td');
+const displayMessage = document.querySelector('h3');
 
 
 
