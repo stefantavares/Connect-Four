@@ -22,11 +22,25 @@ const displayMessage = document.querySelector('h3');
 
 
 /*----- event listeners -----*/
-
+document.querySelector('table').addEventListener('click', handleMove);
+document.querySelector('button').addEventListener('click', init);
 
 
 
 /*----- functions -----*/ 
+init();
 
-
-
+function init() {
+  board = 
+    [null, null, null, null, null, null, null, 
+    null, null, null, null, null, null, null, 
+    null, null, null, null, null, null, null, 
+    null, null, null, null, null, null, null, 
+    null, null, null, null, null, null, null, 
+    null, null, null, null, null, null, null, 
+    null, null, null, null, null, null, null, 
+    ];
+  turn = 1;
+  winner = null;
+  render(); 
+}
