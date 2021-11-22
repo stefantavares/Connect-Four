@@ -26,9 +26,20 @@ document.querySelector('table').addEventListener('click', handleMove);
 document.querySelector('button').addEventListener('click', init);
 
 
-
 /*----- functions -----*/ 
 init();
+
+function handleMove() {
+
+}
+
+
+function render() {
+  board.forEach(function(sl, i) {
+    slotEls[i].style.background = lookup[sl];
+    return turn === 1 ? imgEl.src = redCircleImg : imgEl.src = blueCircleImg;
+  });
+}
 
 function init() {
   board = 
