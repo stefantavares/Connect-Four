@@ -36,22 +36,21 @@ function handleMove(e) {
   let col = e.target.cellIndex;
   let row = [];
 
+  //Obtain the index of the bottom slot in the selected column
   for (let i = 5; i > -1; i--) {
     if (tableRow[i].children[col].style.background === 'white') {
+      //Push the selected column to new array and store in a variable
       row.push(tableRow[i].children[col]);
-      if (turn === 1) {
-        row[0].style.background = 'red';
-        return turn = -1;
-      }
-      if (turn === -1) {
-        row[0].style.background = 'blue';
-        return turn = 1;
-      }
+      //use the first index of the new array to obtain the next available slot
+        let cellIdx = row[0].id.replace('slt', '');
+        board[cellIdx] = turn;
+        turn *= -1;
+        winner = //checkWinner();
+        render();
     }
   }
-  render();
+  // console.log(row[0].id);
 }
-
 
 
 function checkWinner() {
