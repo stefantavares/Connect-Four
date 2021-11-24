@@ -99,9 +99,8 @@ const tableRow = document.getElementsByTagName('tr');
 const displayMessage = document.querySelector('h2');
 
 
-
 /*----- event listeners -----*/
-document.querySelector('table').addEventListener('click', handleMove);
+// document.querySelector('table').addEventListener('click', handleMove);
 document.querySelector('button').addEventListener('click', init);
 
 
@@ -130,6 +129,7 @@ function handleMove(e) {
 
 
 function checkWinner() {
+
   for (let i = 0; i < winningCombos.length; i++) {
     if (Math.abs(
           board[winningCombos[i][0]] +
@@ -139,6 +139,9 @@ function checkWinner() {
       return board[winningCombos[i][0]];
   }
 //Place tie logic here
+  if (board.includes(null) === false) {
+    return 'T';
+  }
 }
 
 
@@ -151,6 +154,7 @@ function render() {
     displayMessage.innerHTML = `LOOK AT THAT... IT'S A TIE!`;
   } else if (winner) {
     displayMessage.innerHTML = `${lookup[winner].toUpperCase()} WINS!`;
+    document.querySelector('table').removeEventListener('click', handleMove);
   } else {
     displayMessage.innerHTML = `IT'S YOUR TURN ${lookup[turn].toUpperCase()}`;
   }
@@ -158,6 +162,7 @@ function render() {
 
 
 function init() {
+  document.querySelector('table').addEventListener('click', handleMove);
   board = [
     null, null, null, null, null, null, null, 
     null, null, null, null, null, null, null, 
