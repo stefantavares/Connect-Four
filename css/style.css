@@ -15,13 +15,18 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
+
 }
 
 .board-container{
-    position: absolute;
+    /* position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%); */
     margin-top: 6px;
     width: 550px;
     height: 466px;
@@ -56,11 +61,9 @@ h1 {
 
 h2 {
     font-family: 'DM Mono', monospace;
-    /* font-family: 'Urbanist', sans-serif; */
-    /* font-family: 'Zen Maru Gothic', sans-serif; */
     font-size: 25px;
-    margin-top: 26px;
-    margin-bottom: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,10 +75,6 @@ img {
 }
 
 button.reset {
-    position: absolute;
-    top: 670px;
-    left: 50%;
-    transform: translate(-50%);
     width: 160px;
     height: 50px;
     margin-top: 25px;
@@ -97,4 +96,8 @@ button.reset {
 button.reset:hover {
     color: white;
     background-color: black;
+}
+
+#button-div {
+    margin-top: 12px;
 }

@@ -138,7 +138,6 @@ function checkWinner() {
           board[winningCombos[i][3]]) === 4)
       return board[winningCombos[i][0]];
   }
-//Place tie logic here
   if (board.includes(null) === false) {
     return 'T';
   }
