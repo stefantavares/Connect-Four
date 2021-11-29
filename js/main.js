@@ -1,7 +1,7 @@
 // /*----- constants -----*/
-const redCircleImg = "https://www.iconsdb.com/icons/preview/soylent-red/circle-xxl.png";
-const blueCircleImg = "https://www.iconsdb.com/icons/preview/royal-blue/circle-xxl.png";
-const whiteCircleImg = "https://www.iconsdb.com/icons/preview/white/circle-xxl.png";
+const redCircleImg = "https://i.imgur.com/Bhx8Mtm.png";
+const blueCircleImg = "https://i.imgur.com/KSGs8yN.png";
+const whiteCircleImg = "https://i.imgur.com/WPi1jIK.png";
 
 const circleImgs = {
   1: redCircleImg,
