@@ -99,7 +99,7 @@ button.reset:hover {
     margin-top: 16px;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 425px) {
     body {
         display: flex;
         flex-direction: column;
@@ -111,8 +111,8 @@ button.reset:hover {
 
     .board-container{
         margin-top: 6px;
-        width: 327px;
-        height: 279px;
+        width: 360px;
+        height: 303px;
         background: black;
         border: 2px solid black;
         border-radius: 10px;
@@ -122,14 +122,14 @@ button.reset:hover {
     .board-container td{
         cursor: pointer;
         width: 54px;
-        height: 41px;
+        height: 45px;
         border: 2px solid black;
         border-radius: 50%;
         background: white;
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 20px;
         margin-top: 100px;
         margin-bottom: 10px;
         letter-spacing: 8px;
