@@ -165,7 +165,6 @@ function render() {
 
 function init() {
   document.querySelector('table').addEventListener('click', handleMove);
-  imgEl.classList.remove('win-border');
   board = [
     null, null, null, null, null, null, null, 
     null, null, null, null, null, null, null, 
