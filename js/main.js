@@ -101,7 +101,6 @@ const displayMessage = document.querySelector('h2');
 
 
 /*----- event listeners -----*/
-// document.querySelector('table').addEventListener('click', handleMove);
 document.querySelector('button').addEventListener('click', init);
 
 
@@ -119,6 +118,7 @@ function handleMove(e) {
       //Push the selected column to a new array and store in a variable
       row.push(tableRow[i].children[col]);
       //use the first index of the new array to obtain the next available slot
+      //in the column.
         let cellIdx = row[0].id.replace('slt', '');
         board[cellIdx] = turn;
     }
@@ -165,6 +165,7 @@ function render() {
 
 function init() {
   document.querySelector('table').addEventListener('click', handleMove);
+  imgEl.classList.remove('win-border');
   board = [
     null, null, null, null, null, null, null, 
     null, null, null, null, null, null, null, 

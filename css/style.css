@@ -67,9 +67,9 @@ h2 {
 }
 
 img {
-    width: 38px;
+    width: 42px;
     height: auto;
-    margin-bottom: 14px;
+    margin-bottom: 18px;
 }
 
 button.reset {
@@ -97,4 +97,73 @@ button.reset:hover {
 
 #button-div {
     margin-top: 16px;
+}
+
+@media only screen and (min-width: 375px) {
+    .board-container{
+        margin-top: 6px;
+        width: 300px;
+        height: 250px;
+        background: black;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: .5rem;
+    }
+
+    .board-container td{
+        cursor: pointer;
+        width: 48px;
+        height: 36px;
+        border: 2px solid black;
+        border-radius: 50%;
+        background: white;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-top: 32px;
+        margin-bottom: 10px;
+        letter-spacing: 8px;
+    }
+    
+    #game-title {
+        display: inline-block;
+        border: solid black;
+        border-radius: 8px;
+        padding: 10px 19px 10px 19px;
+    }
+    
+    h2 {
+        font-family: 'DM Mono', monospace;
+        font-size: 15px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    img {
+        width: 30px;
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    button.reset {
+        width: 120px;
+        height: 40px;
+        padding:0.35em 1.2em;
+        border: 2px solid black;
+        margin:0 0.3em 0.3em 0;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family:'Roboto',sans-serif;
+        font-weight: 410;
+        font-size: 18px;
+        color:black;
+        background-color: white;
+        text-align:center;
+        cursor: pointer;
+        transition: all 0.1s;
+        }
 }
