@@ -1,12 +1,13 @@
 // /*----- constants -----*/
-
-// const circleImgs = {
-//   1: "https://www.iconsdb.com/icons/preview/soylent-red/circle-xxl.png",
-//   '-1': "https://www.iconsdb.com/icons/preview/royal-blue/circle-xxl.png"
-// }
-
 const redCircleImg = "https://www.iconsdb.com/icons/preview/soylent-red/circle-xxl.png";
 const blueCircleImg = "https://www.iconsdb.com/icons/preview/royal-blue/circle-xxl.png";
+const whiteCircleImg = "https://www.iconsdb.com/icons/preview/white/circle-xxl.png";
+
+const circleImgs = {
+  1: redCircleImg,
+  '-1': blueCircleImg,
+  null: whiteCircleImg,
+};
 
 const lookup = {
   1: 'red',
@@ -147,15 +148,17 @@ function checkWinner() {
 function render() {
   board.forEach(function(sl, i) {
     slotEls[i].style.background = lookup[sl];
-    return turn === 1 ? imgEl.src = redCircleImg : imgEl.src = blueCircleImg;
   });
   if (winner === 'T'){
     displayMessage.innerHTML = `LOOK AT THAT... IT'S A TIE!`;
+    imgEl.src = circleImgs.null;
   } else if (winner) {
     displayMessage.innerHTML = `${lookup[winner].toUpperCase()} WINS!`;
     document.querySelector('table').removeEventListener('click', handleMove);
+    imgEl.src = circleImgs[winner];
   } else {
-    displayMessage.innerHTML = `IT'S YOUR TURN ${lookup[turn].toUpperCase()}`;
+    displayMessage.innerHTML = `IT'S YOUR TURN:`;
+    imgEl.src = circleImgs[turn];
   }
 }
 

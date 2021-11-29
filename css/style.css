@@ -24,9 +24,6 @@ body {
 }
 
 .board-container{
-    /* position: absolute;
-    left: 50%;
-    transform: translate(-50%); */
     margin-top: 6px;
     width: 550px;
     height: 466px;
@@ -62,22 +59,22 @@ h1 {
 h2 {
     font-family: 'DM Mono', monospace;
     font-size: 25px;
-    margin-top: 14px;
-    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 11px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 img {
-    width: 30px;
+    width: 38px;
     height: auto;
+    margin-bottom: 14px;
 }
 
 button.reset {
     width: 160px;
     height: 50px;
-    margin-top: 25px;
     padding:0.35em 1.2em;
     border: 2px solid black;
     margin:0 0.3em 0.3em 0;
@@ -99,5 +96,5 @@ button.reset:hover {
 }
 
 #button-div {
-    margin-top: 12px;
+    margin-top: 16px;
 }
