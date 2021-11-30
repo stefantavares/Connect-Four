@@ -56,6 +56,6 @@ Some planned future enhancements are:
 
 <br />
 
-### **CLICK HERE TO PLAY THE GAME!**
+### **CLICK THE LINK TO PLAY THE GAME!**
 
-> - https://stefantavares.github.io/Connect-Four/
+> - <a href="https://stefantavares.github.io/Connect-Four/" target="_blank">PLAY CONNECT FOUR!</a>
