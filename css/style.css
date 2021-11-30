@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 
 * {
@@ -115,7 +112,7 @@ button.reset:hover {
 		background-color: white;
 	}
 	.board-container {
-		margin-top: 6px;
+		margin-top: 3px;
 		width: 360px;
 		height: 303px;
 		background: black;
@@ -159,6 +156,15 @@ button.reset:hover {
 		height: auto;
 		margin-bottom: 12px;
 	}
+
+    #display2 {
+        border-radius: 4px;
+        padding: 4px 18px 4px 18px;
+        margin: 0px 0px 3px 0px;
+        font-size: 12px;
+        font-weight: 625;
+    }
+
 	button.reset {
 		width: 280px;
 		height: 40px;
@@ -170,15 +176,15 @@ button.reset:hover {
 		font-family: 'Roboto', sans-serif;
 		font-weight: 410;
 		font-size: 14px;
-		color: black;
-		background-color: white;
+		color: white;
+		background-color: black;
 		text-align: center;
 		cursor: pointer;
 		transition: all 0.1s;
 	}
 	button.reset:hover {
-		color: white;
-		background-color: black;
+		color: black;
+		background-color: white;
 	}
 	#button-div {
 		margin-top: 20px;
