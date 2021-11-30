@@ -5,187 +5,182 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
 }
 
-.board-container{
-    margin-top: 6px;
-    width: 550px;
-    height: 466px;
-    background: black;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: .5rem;
+.board-container {
+	margin-top: 6px;
+	width: 550px;
+	height: 466px;
+	background: black;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: .5rem;
 }
 
-.board-container td{
-    cursor: pointer;
-    width: 80px;
-    height: 71px;
-    border: 2px solid black;
-    border-radius: 50%;
-    background: white;
+.board-container td {
+	cursor: pointer;
+	width: 80px;
+	height: 71px;
+	border: 2px solid black;
+	border-radius: 50%;
+	background: white;
 }
 
 h1 {
-    font-size: 37px;
-    margin-top: 32px;
-    margin-bottom: 10px;
-    letter-spacing: 8px;
+	font-size: 37px;
+	margin-top: 32px;
+	margin-bottom: 10px;
+	letter-spacing: 8px;
 }
 
 #game-title {
-    display: inline-block;
-    border: solid black;
-    border-radius: 8px;
-    padding: 10px 19px 10px 19px;
+	display: inline-block;
+	border: solid black;
+	border-radius: 8px;
+	padding: 10px 19px 10px 19px;
 }
 
 h2 {
-    font-family: 'DM Mono', monospace;
-    font-size: 25px;
-    margin-top: 16px;
-    margin-bottom: 11px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	font-family: 'DM Mono', monospace;
+	font-size: 25px;
+	margin-top: 16px;
+	margin-bottom: 11px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 img {
-    width: 42px;
-    height: auto;
-    margin-bottom: 18px;
+	width: 42px;
+	height: auto;
+	margin-bottom: 14px;
+}
+
+#display2 {
+	border-radius: 4px;
+	padding: 4px 18px 4px 18px;
+	margin: 0px 0px 7px 0px;
+	font-size: 17px;
+	font-weight: 550;
 }
 
 button.reset {
-    width: 270px;
-    height: 50px;
-    padding:0.35em 1.2em;
-    border: 2px solid black;
-    margin:0 0.3em 0.3em 0;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-family:'Roboto',sans-serif;
-    font-weight: 410;
-    font-size: 20px;
-    color:black;
-    background-color: white;
-    text-align:center;
-    cursor: pointer;
-    transition: all 0.1s;
-    }
+	width: 270px;
+	height: 50px;
+	padding: 0.35em 1.2em;
+	border: 2px solid black;
+	margin: 0 0.3em 0.3em 0;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 410;
+	font-size: 20px;
+	color: white;
+	background-color: black;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.1s;
+}
 
 button.reset:hover {
-    color: white;
-    background-color: black;
+	color: black;
+	background-color: white;
 }
 
 #button-div {
-    margin-top: 16px;
+	margin-top: 16px;
 }
 
 /* For mobile */
-
 @media only screen and (max-width: 375px) {
-     
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: white;  
-    }
-
-    .board-container{
-        margin-top: 6px;
-        width: 360px;
-        height: 303px;
-        background: black;
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: .5rem;
-    }
-
-    .board-container td{
-        cursor: pointer;
-        width: 54px;
-        height: 45px;
-        border: 2px solid black;
-        border-radius: 50%;
-        background: white;
-    }
-
-    h1 {
-        font-size: 20px;
-        font-weight: 700;
-        margin-top: 80px;
-        margin-bottom: 18px;
-        letter-spacing: 8px;
-    }
-    
-    #game-title {
-        display: inline-block;
-        border: solid black;
-        border-radius: 8px;
-        padding: 10px 19px 10px 19px;
-    }
-    
-    h2 {
-        font-family: 'DM Mono', monospace;
-        font-size: 18px;
-        font-weight: 900;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    img {
-        width: 30px;
-        height: auto;
-        margin-bottom: 12px;
-    }
-
-    button.reset {
-        width: 280px;
-        height: 40px;
-        padding:0.35em 1.2em;
-        border: 2px solid black;
-        margin:0 0.3em 0.3em 0;
-        border-radius: 5px;
-        box-sizing: border-box;
-        font-family:'Roboto',sans-serif;
-        font-weight: 410;
-        font-size: 14px;
-        color:black;
-        background-color: white;
-        text-align:center;
-        cursor: pointer;
-        transition: all 0.1s;
-        }
-
-    button.reset:hover {
-        color: white;
-        background-color: black;
-    }
-
-    #button-div {
-        margin-top: 20px;
-    }
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+	}
+	.board-container {
+		margin-top: 6px;
+		width: 360px;
+		height: 303px;
+		background: black;
+		border: 2px solid black;
+		border-radius: 10px;
+		padding: .5rem;
+	}
+	.board-container td {
+		cursor: pointer;
+		width: 54px;
+		height: 45px;
+		border: 2px solid black;
+		border-radius: 50%;
+		background: white;
+	}
+	h1 {
+		font-size: 20px;
+		font-weight: 700;
+		margin-top: 80px;
+		margin-bottom: 18px;
+		letter-spacing: 8px;
+	}
+	#game-title {
+		display: inline-block;
+		border: solid black;
+		border-radius: 8px;
+		padding: 10px 19px 10px 19px;
+	}
+	h2 {
+		font-family: 'DM Mono', monospace;
+		font-size: 18px;
+		font-weight: 900;
+		margin-top: 8px;
+		margin-bottom: 8px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	img {
+		width: 30px;
+		height: auto;
+		margin-bottom: 12px;
+	}
+	button.reset {
+		width: 280px;
+		height: 40px;
+		padding: 0.35em 1.2em;
+		border: 2px solid black;
+		margin: 0 0.3em 0.3em 0;
+		border-radius: 5px;
+		box-sizing: border-box;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 410;
+		font-size: 14px;
+		color: black;
+		background-color: white;
+		text-align: center;
+		cursor: pointer;
+		transition: all 0.1s;
+	}
+	button.reset:hover {
+		color: white;
+		background-color: black;
+	}
+	#button-div {
+		margin-top: 20px;
+	}
 }

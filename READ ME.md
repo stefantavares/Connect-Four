@@ -6,23 +6,56 @@ It was in 1974 when Milton Bradley brought the plastic version of Connect Four t
 <br />
 <br />
 
-## **HOW TO PLAY**
+## **HOW TO PLAY:**
 
-This is a two player game. Player 1 being the color **Red** and Player 2 being the color **Blue**. The board begins empty, and red is up first! The players will click on the column in which they want to drop their piece into the next available vertical slot in that column. Take turns until either **Red** or **Blue** has connected 4 pieces either vertically, horizontally, or diagonally. If the board fills up with neither player connecting 4, the game is a tie!
+<br />
+
+- This is a two player game. Player 1 being the color **Red** and Player 2 being the color **Blue**. The board begins empty, and red is up first!  
+  <br />
+
+<img src="https://i.imgur.com/WSbY7XH.png" height= 370px>
+
+<br />
+
+- The players will each take turns clicking on the column in which they want to drop their piece into the next available vertical slot in that column.  
+  <br />
+
+<img src="https://i.imgur.com/jroTCvf.png" height= 370px>
+
+<br />
+
+- Take turns until either **Red** or **Blue** has connected 4 pieces either vertically, horizontally, or diagonally. The player that connects 4 first, wins!  
+  <br />
+
+<img src="https://i.imgur.com/flCl4no.png" height= 370px>
+
+<br />
+
+- If the board fills up with neither player connecting 4, the game is a tie!  
+  <br />
+
+<img src="https://i.imgur.com/CxlfN0H.png" height= 370px>
+
 <br />
 <br />
 
 ## **TECHNOLOGIES USED**
 
-- HTML
-- CSS
-- JAVASCRIPT
-  <br />
-  <br />
+> - HTML
+> - CSS
+> - JAVASCRIPT
+
+<br />
 
 ### **NEXT STEPS:**
 
 Some planned future enhancements are:
 
-- Highlight the winning combo when there's a win.
-- Score tracker between players.
+> - Highlight the winning combo when there's a win.
+> - Score tracker between players.
+
+<br />
+
+### **CLICK HERE TO PLAY THE GAME!**
+
+> - https://stefantavares.github.io/Connect-Four/
