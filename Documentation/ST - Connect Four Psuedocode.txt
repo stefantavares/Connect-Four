@@ -1,0 +1,46 @@
+﻿Connect Four Pseudocode:
+
+
+1. Define required constants:
+* Define a colors object with the keys of ‘null’. The value assigned to each key represents which color will display for an empty slot, player 1, and player 2.
+* Define the winning combinations.
+
+
+2. Define the required variables used to track the state of the game:
+* Create a board variable as an array to represent slots [0-48].
+* Create a turn variable to determine who’s turn it is.
+* Create a winner variable to represent ‘“Player” win’ ‘Tie’ or ‘Game in play’.
+
+
+3. Create variables on the page that will need to be accessed more than once.
+* Store the 49 elements that represent the slots.
+
+
+4. Upon loading the app:
+* Initialize the state variables:
+* Init the board array to 42 nulls (empty slots). The table elements will map to each slot, index 0 will be top left and index 41 will be bottom right.
+* Init who’s turn it is.
+* Init the winner to null to represent that there is no winner or tie    (yet).
+* Render the state variables to the page:
+* Loop over each of the 42 elements that represent the slots, and for each iteration:
+* Use the index of the iteration to access the mapped value from the board array.
+* Set the background color of the current element by using the value as a key on the color.
+* 5. Render:
+* If winner has a value other than null, render who’s turn it is. Use the player name for the player.
+* If winner is equal to ‘T’, render a tie message.
+* Otherwise, display which player has won.
+* Wait for the player to click a square.
+
+
+6. Handle the player making a move:
+* Obtain the idx of the square that was clicked:
+* Extract the idx from an id assigned to the element in the HTML.
+* Loop through the slot elements and break out when slot element = e.target
+* If the board has a value at the idx, return.
+* If winner is not null, return because the game has ended.
+* Update the board array at the idx with the value of turn.
+* Flip turns by multiplying by -1.
+* Set the winner variable if there is a winner:
+        
+7. Handle replay button click:
+* Init the board array and render that to the board.
