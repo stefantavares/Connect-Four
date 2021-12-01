@@ -2,7 +2,7 @@
 
 
 1. Define required constants:
-* Define a colors object with the keys of ‘null’. The value assigned to each key represents which color will display for an empty slot, player 1, and player 2.
+* Define a colors object as a lookup. The value assigned to each key represents which color will display for an empty slot, player 1, and player 2.
 * Define the winning combinations.
 
 
@@ -40,7 +40,7 @@
 * If winner is not null, return because the game has ended.
 * Update the board array at the idx with the value of turn.
 * Flip turns by multiplying by -1.
-* Set the winner variable if there is a winner:
+* Set the winner variable if there is a winner.
         
 7. Handle replay button click:
 * Init the board array and render that to the board.
