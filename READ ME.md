@@ -37,6 +37,12 @@ It was in 1974 when Milton Bradley brought the plastic version of Connect Four t
 <img src="https://i.imgur.com/CxlfN0H.png" height= 370px>
 
 <br />
+
+### **CLICK THE LINK TO PLAY THE GAME!**
+
+- <a href="https://stefantavares.github.io/Connect-Four/" target="_blank" rel="noreferrer noopener" >PLAY CONNECT FOUR!</a>
+
+<br />
 <br />
 
 ## **TECHNOLOGIES USED**
@@ -55,7 +61,3 @@ Some planned future enhancements are:
 > - Score tracker between players.
 
 <br />
-
-### **CLICK THE LINK TO PLAY THE GAME!**
-
-> - <a href="https://stefantavares.github.io/Connect-Four/" target="_blank" rel="noreferrer noopener" >PLAY CONNECT FOUR!</a>

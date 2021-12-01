@@ -25,7 +25,7 @@
 * Loop over each of the 42 elements that represent the slots, and for each iteration:
 * Use the index of the iteration to access the mapped value from the board array.
 * Set the background color of the current element by using the value as a key on the color.
-* 5. Render:
+* 5. Render.
 * If winner has a value other than null, render who’s turn it is. Use the player name for the player.
 * If winner is equal to ‘T’, render a tie message.
 * Otherwise, display which player has won.
@@ -33,7 +33,7 @@
 
 
 6. Handle the player making a move:
-* Obtain the idx of the square that was clicked:
+* Obtain the idx of the square that was clicked.
 * Extract the idx from an id assigned to the element in the HTML.
 * Loop through the slot elements and break out when slot element = e.target
 * If the board has a value at the idx, return.
